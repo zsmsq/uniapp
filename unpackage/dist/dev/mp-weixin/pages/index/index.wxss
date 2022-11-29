@@ -1,24 +1,98 @@
-
-.content {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+.indexContainer {
+  height: 100%;
 }
-.logo {
-	height: 200rpx;
-	width: 200rpx;
-	margin-top: 200rpx;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 50rpx;
+.indexContainer .header {
+  height: 80rpx;
+  display: flex;
+  align-items: center;
 }
-.text-area {
-	display: flex;
-	justify-content: center;
+.indexContainer .header .logo {
+  width: 120rpx;
+  height: 40rpx;
+  margin: 0 20rpx;
 }
-.title {
-	font-size: 36rpx;
-	color: #8f8f94;
+.indexContainer .header .search {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  height: 60rpx;
+  border: 2rpx solid #aaa;
+  box-sizing: border-box;
+}
+.indexContainer .header .search .iconfont {
+  margin: 0 10rpx;
+}
+.indexContainer .header .search .ipt {
+  font-size: 28rpx;
+}
+.indexContainer .header .search .place {
+  color: #f00;
+}
+.indexContainer .header .btn {
+  width: 140rpx;
+  height: 60rpx;
+  font-size: 28rpx;
+  text-align: center;
+  line-height: 60rpx;
+  padding: 0 10rpx;
+  margin: 0 10rpx;
+}
+.navScroll {
+  height: 80rpx;
+  display: flex;
+}
+.navScroll .scrollItem {
+  width: 140rpx;
+  height: 80rpx;
+  font-size: 28rpx;
+  text-align: center;
+  line-height: 80rpx;
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+.navScroll .scrollItem.active {
+  border-bottom: 2rpx solid #f00;
+}
+.mainScroll {
+  height: calc(100vh - 160rpx);
+}
+.mainScroll .main .swiperImg {
+  width: 100%;
+  height: 300rpx;
+}
+.mainScroll .main .iconList {
+  height: 32rpx;
+  display: flex;
+  justify-content: space-around;
+}
+.mainScroll .main .iconList .iconItem {
+  display: flex;
+  justify-content: space-around;
+}
+.mainScroll .main .iconList .iconItem .iconImg {
+  width: 32rpx;
+  height: 32rpx;
+}
+.mainScroll .main .iconList .iconItem .iconText {
+  font-size: 26rpx;
+}
+.mainScroll .main .categoryList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.mainScroll .main .categoryList .categoryItem {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mainScroll .main .categoryList .categoryItem .itemImg {
+  width: 110rpx;
+  height: 110rpx;
+  margin: 20rpx 0;
+}
+.mainScroll .main .categoryList .categoryItem .itemText {
+  font-size: 28rpx;
 }
 
